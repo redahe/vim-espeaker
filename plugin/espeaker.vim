@@ -13,8 +13,8 @@ call Speak(line)
 endfunction
 
 
-function! SpeakStatus()
-call Speak(line('.') . ' '. virtcol('.') . ' ')
+function! SpeakStatus(mode)
+call Speak(line('.') . ' '. virtcol('.') . ' ' . a:mode)
 endfunction
 
 function! SpeakChar()
