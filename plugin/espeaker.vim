@@ -1,16 +1,8 @@
 function! Speak(text)
-
 let firstarg=a:text
-python3 << EOF
-import vim
-import sh
-
-PUNCT='$%^*-+`~|<>?!@[],.;:\'"(){}/\\'
-
-text=(vim.eval("a:text"))
-sh.espeak('--punct='+PUNCT, text, '-s 250')
-
-EOF
+let punct = '"''$@#!.[\"]{}()_-/\\<>~,:;+-*\`%^&"'
+let command='espeak -s 250 --punct=' . punct .' &'
+echom system(command, firstarg)
 endfunction
 
 
