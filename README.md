@@ -18,8 +18,8 @@ Clone the repository into a directory in your 'runtimepath', or use a plugin man
 ## Configuration
 
  In your .vimrc:
-* Set the espeak's speed in words per minute: 
-`   let g:espeaker_speed=200 `  
+* Set the espeak's speed in words per minute (optional, default is 200):
+`   let g:espeaker_speed=200 `
 
 * Add keymappings:  
 ```
