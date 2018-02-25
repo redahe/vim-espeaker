@@ -13,21 +13,21 @@ Vim is an incredible text editor. Its 'normal mode' with commands not only makes
 * espeak
 
 ## Installation
-Clone the repository into a directory in your 'runtimepath', or use a plugin manager like vundle or pathogen.
+Clone the repository into a directory in your 'runtimepath', or use a plugin manager like [vundle](https://github.com/VundleVim/Vundle.vim) or [pathogen](https://github.com/tpope/vim-pathogen).
 
 ## Configuration
 
  In your .vimrc:
-* Set the espeak's speed in words per minute: 
-`   let g:espeaker_speed=200 `  
+* Set the espeak's speed in words per minute (optional, default is 200):
+`   let g:espeaker_speed=200 `
 
-* Add keymappings:  
+* Add keymappings:
 ```
-  map <F3> : call SpeakLine()<CR>
-  map <F5> : call SpeakChar()<CR>
-  map <F6> : call SpeakWord()<CR>
+  noremap <F3> : call SpeakLine()<CR>
+  noremap <F5> : call SpeakChar()<CR>
+  noremap <F6> : call SpeakWord()<CR>
 
   nnoremap <F4> :call SpeakStatus('normal')<CR>
-  vnoremap <F4> :<C-u>call SpeakStatus('visual') <CR>: normal gv<CR>
+  xnoremap <F4> :<C-u>call SpeakStatus('visual') <CR>: normal! gv<CR>
   inoremap <F4> <C-o>:call SpeakStatus('insert')<CR>
 ```
