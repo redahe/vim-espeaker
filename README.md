@@ -13,7 +13,7 @@ Vim is an incredible text editor. Its 'normal mode' with commands not only makes
 * espeak
 
 ## Installation
-Clone the repository into a directory in your 'runtimepath', or use a plugin manager like vundle or pathogen.
+Clone the repository into a directory in your 'runtimepath', or use a plugin manager like [vundle](https://github.com/VundleVim/Vundle.vim) or [pathogen](https://github.com/tpope/vim-pathogen).
 
 ## Configuration
 
