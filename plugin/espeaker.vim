@@ -1,8 +1,8 @@
 function! Speak(text)
-et g:espeaker_speed = get(g:, 'espeaker_speed', 200)
+let g:espeaker_speed = get(g:, 'espeaker_speed', 200)
 let punct = '"''$@#!.[\"]{}()_-/\\<>~,:;+-*\`%^&"'
 let command='espeak -s ' . g:espeaker_speed .' --punct=' . punct .' &'
-echom system(command, firstarg)
+echom system(command, a:text)
 endfunction
 
 
