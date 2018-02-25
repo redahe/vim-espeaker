@@ -18,13 +18,12 @@ The package is compatible with standard vim plugin manageres (vundle / pathogen)
 
 ## Configuration
 
-* In your .vimrc
-  Set the espeak's speed in words per minute:
-
-
-   let g:espeaker_speed=200
+ In your .vimrc:
+* Set the espeak's speed in words per minute:
+`   let g:espeaker_speed=200 `
 
 * Add keymappings:
+```
   map <F3> : call SpeakLine()<CR>
   map <F5> : call SpeakChar()<CR>
   map <F6> : call SpeakWord()<CR>
@@ -32,3 +31,4 @@ The package is compatible with standard vim plugin manageres (vundle / pathogen)
   nnoremap <F4> :call SpeakStatus('normal')<CR>
   vnoremap <F4> :<C-u>call SpeakStatus('visual') <CR>: normal gv<CR>
   inoremap <F4> <C-o>:call SpeakStatus('insert')<CR>
+```
