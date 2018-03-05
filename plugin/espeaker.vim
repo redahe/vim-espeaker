@@ -1,7 +1,13 @@
 function! Speak(text)
-let g:espeaker_speed = get(g:, 'espeaker_speed', 200)
-let punct = '"''$@#!.[\"]{}()_-/\\<>~,:;+-*\`%^&"'
-let command='espeak -s ' . g:espeaker_speed .' --punct=' . punct .' &'
+let g:espeaker_punct       = get(g:, 'espeaker_punct', '"''$@#!.[\"]{}()_-/\\<>~,:;+-*\`%^&"')
+let g:espeaker_speed       = get(g:, 'espeaker_speed', 200)
+let g:espeaker_synthesizer = get(g:, 'espeaker_synthesizer', 'espeak')
+let g:espeaker_voice       = get(g:, 'espeaker_voice', 'default')
+let command=g:espeaker_synthesizer  . 
+  \ ' -v ' . g:espeaker_voice .
+  \ ' -s ' . g:espeaker_speed .
+  \ ' --punct=' . g:espeaker_punct .
+  \ ' &'
 echom system(command, a:text)
 endfunction
 
