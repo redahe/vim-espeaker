@@ -10,8 +10,7 @@ Vim is an incredible text editor. Its 'normal mode' with commands not only makes
 
 ## Requirements
 
-* espeak
-   or
+* espeak <br/>  or </br>
 * speech-dispatcher
 
 ## Installation
