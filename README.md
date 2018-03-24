@@ -11,12 +11,17 @@ Vim is an incredible text editor. Its 'normal mode' with commands not only makes
 ## Requirements
 
 * espeak
+   or
+* speech-dispatcher
 
 ## Installation
 Clone the repository into a directory in your 'runtimepath', or use a plugin manager like [vundle](https://github.com/VundleVim/Vundle.vim) or [pathogen](https://github.com/tpope/vim-pathogen).
 
 ## Plugin Configuration
  In your .vimrc:
+
+* Set using of speech-dispatcher. (optional, default is 0. If set to non zero the following options are ignored)
+ - `let g:espeaker_use_dispatcher=0`
 * Set the synthesizer (optional, default is espeak. espeak-ng is also supported):
  - `let g:espeaker_synthesizer='espeak'`
 * Set the synthesizer's speed in words per minute (optional, default is 200):
