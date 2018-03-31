@@ -25,8 +25,8 @@ Clone the repository into a directory in your 'runtimepath', or use a plugin man
  - `let g:espeaker_synthesizer='espeak'`
 * Set the synthesizer's speed in words per minute (optional, default is 200):
  - `let g:espeaker_speed=200`
-* Set the list of symbols that should be read aloud (optional, default is `$'@#!.["]{}/()_-\<>~,:;+-*``%^&`). Pay attention to escaping characters:
- - `let g:espeaker_punct='$''@#!.[\"]{}/()_-\\<>~,:;+-*\``%^&'`
+* Set the list of symbols that should be read aloud (optional, default is ``$'@#!.["]{}/()_-\<>~,:;+-*`%^&``). Pay attention to escaping characters:
+ - ``let g:espeaker_punct='$''@#!.[\"]{}/()_-\\<>~,:;+-*\`%^&'``
 * Set the voice for the synthesizer to use (optional, default is `default`):
  - `let g:espeaker_voice='default'`
 
